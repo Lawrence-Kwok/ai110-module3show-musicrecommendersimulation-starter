@@ -17,19 +17,20 @@ Replace this paragraph with your own summary of what your version does.
 
 ## How The System Works
 
-Explain your design in plain language.
+Real system recommendations prioritize selections primarily on attention or likes /
+dislikes each user has, and based on the songs that the user interacts with, creates
+a personalized listing based on songs that match the what the user is most engaged by. 
 
-Some prompts to answer:
+In the case of the system that the music recommender intends to implement, the 
+songs are characterized by its genre, mood, energy, tempo, valence, danceability, and acousticness values, though only the values in the userProfile would be the ones
+that I intend to use. Of these categories, the UserProfile stores the users favorite
+genre, mood, energy, and acousticness preferences.
 
-- What features does each `Song` use in your system
-  - For example: genre, mood, energy, tempo
-- What information does your `UserProfile` store
-- How does your `Recommender` compute a score for each song
-- How do you choose which songs to recommend
+For the recommender, we will go down the list of criteria presented and assign a positive or negative score to the criteria measured based on how close the songs
+characterisitcs are to the users preferences. The weighting scale (tentative to change) is as follows: 40% genre, 30% mood, 20% energy, and 10% acoustiness. 
 
-You can include a simple diagram or bullet list if helpful.
-
----
+Songs are chosen based on the sum of all the weighted values and compared to
+a set minimum value, with filtered songs sorted from highest to lowest in the list.
 
 ## Getting Started
 
