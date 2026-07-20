@@ -27,10 +27,18 @@ that I intend to use. Of these categories, the UserProfile stores the users favo
 genre, mood, energy, and acousticness preferences.
 
 For the recommender, we will go down the list of criteria presented and assign a positive or negative score to the criteria measured based on how close the songs
-characterisitcs are to the users preferences. The weighting scale (tentative to change) is as follows: 40% genre, 30% mood, 20% energy, and 10% acoustiness. 
+characterisitcs are to the users preferences. The weighting scale (tentative to change) is as follows: 35% genre, 30% mood, 25% energy, and 10% acoustiness. 
+
+Formula is as follows: (genre match) 35 + (mood match) 30 + 
+(energy closeness) (max(0,1 - abs(energy - target_energy))) 25 +
+(acoustinesses) ( 1 - acousticness value) 10 
 
 Songs are chosen based on the sum of all the weighted values and compared to
 a set minimum value, with filtered songs sorted from highest to lowest in the list.
+
+In terms of biases, there are severe blind spots in all or nothing
+approaches to genre and mood matches, since tangential relation 
+to the genre isn't accounted for (i.e. hip hop and pop),  similarly with mood. Given the strength of genre and mood accounting for over 55% of the weight, it might be overbiases to match those two precisely. 
 
 ## Getting Started
 
