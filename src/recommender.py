@@ -85,11 +85,11 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     
     if song["genre"] == user_prefs["favorite_genre"]:
         score += 35
-        reasons.append("matches your favorite genre")
+        reasons.append("matches your favorite genre (+35)")
 
     if song["mood"] == user_prefs["favorite_mood"]:
         score += 30
-        reasons.append("matches your favorite mood")
+        reasons.append("matches your favorite mood (+30)")
 
     energy_closeness = max(0, 1 - abs(song["energy"] - user_prefs["target_energy"]))
     energy_points = energy_closeness * 25
@@ -107,7 +107,7 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
 
     return (score, reasons)
 
-def recommend_songs(user_prefs: Dict, songs: List[Dict], k: int = 5) -> List[Tuple[Dict, float, str]]:
+def recommend_songs(user_prefs: Dict, songs: List[Dict], k: int = 5) -> List[Tuple[Dict, float, List[str]]]:
     """
     Functional implementation of the recommendation logic.
     Required by src/main.py
@@ -116,8 +116,7 @@ def recommend_songs(user_prefs: Dict, songs: List[Dict], k: int = 5) -> List[Tup
 
     for song in songs:
         score, reasons = score_song(user_prefs, song)
-        explanation = ", ".join(reasons)
-        scored_songs.append((song, score, explanation))
+        scored_songs.append((song, score, reasons))
 
     scored_songs.sort(key=lambda item: item[1], reverse=True)
     return scored_songs[:k]
