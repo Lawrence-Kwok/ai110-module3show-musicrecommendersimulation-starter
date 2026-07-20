@@ -76,52 +76,148 @@ You can add more tests in `tests/test_recommender.py`.
 ---
 
 ## Sample Recommendation Output
+
+Top recommendations for 'High-Energy Pop':
+
 ============================================================
 1. Sunrise City by Neon Echo
-   Score   : 97.70
+   Score   : 96.20
    Genre   : pop
    Mood    : happy
    Reasons :
-   - matches your favorite genre
-   - matches your favorite mood
-   - energy is close to your target (+24.5)
+   - matches your favorite genre (+35)
+   - matches your favorite mood (+30)
+   - energy is close to your target (+23.0)
    - acousticness fits your preference (+8.2)
 ------------------------------------------------------------
 2. Gym Hero by Max Pulse
-   Score   : 66.25
+   Score   : 68.75
    Genre   : pop
    Mood    : intense
    Reasons :
-   - matches your favorite genre
-   - energy is close to your target (+21.8)
+   - matches your favorite genre (+35)
+   - energy is close to your target (+24.2)
    - acousticness fits your preference (+9.5)
 ------------------------------------------------------------
 3. Rooftop Lights by Indigo Parade
-   Score   : 60.50
+   Score   : 58.00
    Genre   : indie pop
    Mood    : happy
    Reasons :
-   - matches your favorite mood
-   - energy is close to your target (+24.0)
+   - matches your favorite mood (+30)
+   - energy is close to your target (+21.5)
    - acousticness fits your preference (+6.5)
 ------------------------------------------------------------
-4. Mirrorball Static by Juniper Glow
-   Score   : 33.35
-   Genre   : funk
-   Mood    : playful
-   Reasons :
-   - energy is close to your target (+24.8)
-   - acousticness fits your preference (+8.6)
-------------------------------------------------------------
-5. Neon District by Kilo Phase
-   Score   : 32.40
+4. Neon District by Kilo Phase
+   Score   : 33.90
    Genre   : techno
    Mood    : euphoric
    Reasons :
-   - energy is close to your target (+23.0)
+   - energy is close to your target (+24.5)
    - acousticness fits your preference (+9.4)
 ------------------------------------------------------------
+5. Storm Runner by Voltline
+   Score   : 33.75
+   Genre   : rock
+   Mood    : intense
+   Reasons :
+   - energy is close to your target (+24.8)
+   - acousticness fits your preference (+9.0)
+------------------------------------------------------------
 
+Top recommendations for 'Chill Lofi':
+
+============================================================
+1. Library Rain by Paper Lanterns
+   Score   : 64.85
+   Genre   : lofi
+   Mood    : chill
+   Reasons :
+   - matches your favorite genre (+35)
+   - energy is close to your target (+21.3)
+   - acousticness fits your preference (+8.6)
+------------------------------------------------------------
+2. Focus Flow by LoRoom
+   Score   : 62.80
+   Genre   : lofi
+   Mood    : focused
+   Reasons :
+   - matches your favorite genre (+35)
+   - energy is close to your target (+20.0)
+   - acousticness fits your preference (+7.8)
+------------------------------------------------------------
+3. Midnight Coding by LoRoom
+   Score   : 61.60
+   Genre   : lofi
+   Mood    : chill
+   Reasons :
+   - matches your favorite genre (+35)
+   - energy is close to your target (+19.5)
+   - acousticness fits your preference (+7.1)
+------------------------------------------------------------
+4. Velvet Dawn by Aster Vale
+   Score   : 34.20
+   Genre   : classical
+   Mood    : serene
+   Reasons :
+   - energy is close to your target (+24.5)
+   - acousticness fits your preference (+9.7)
+------------------------------------------------------------
+5. Spacewalk Thoughts by Orbit Bloom
+   Score   : 32.20
+   Genre   : ambient
+   Mood    : chill
+   Reasons :
+   - energy is close to your target (+23.0)
+   - acousticness fits your preference (+9.2)
+------------------------------------------------------------
+
+Top recommendations for 'Deep Intense Rock':
+
+============================================================
+1. Storm Runner by Voltline
+   Score   : 97.50
+   Genre   : rock
+   Mood    : intense
+   Reasons :
+   - matches your favorite genre (+35)
+   - matches your favorite mood (+30)
+   - energy is close to your target (+23.5)
+   - acousticness fits your preference (+9.0)
+------------------------------------------------------------
+2. Gym Hero by Max Pulse
+   Score   : 62.50
+   Genre   : pop
+   Mood    : intense
+   Reasons :
+   - matches your favorite mood (+30)
+   - energy is close to your target (+23.0)
+   - acousticness fits your preference (+9.5)
+------------------------------------------------------------
+3. Neon District by Kilo Phase
+   Score   : 33.65
+   Genre   : techno
+   Mood    : euphoric
+   Reasons :
+   - energy is close to your target (+24.2)
+   - acousticness fits your preference (+9.4)
+------------------------------------------------------------
+4. Mirrorball Static by Juniper Glow
+   Score   : 32.60
+   Genre   : funk
+   Mood    : playful
+   Reasons :
+   - energy is close to your target (+24.0)
+   - acousticness fits your preference (+8.6)
+------------------------------------------------------------
+5. Sunrise City by Neon Echo
+   Score   : 32.45
+   Genre   : pop
+   Mood    : happy
+   Reasons :
+   - energy is close to your target (+24.2)
+   - acousticness fits your preference (+8.2)
+------------------------------------------------------------
 ## Experiments You Tried
 
 Use this section to document the experiments you ran. For example:
