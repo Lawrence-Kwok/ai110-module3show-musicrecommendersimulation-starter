@@ -2,18 +2,13 @@
 
 ## Project Summary
 
-In this project you will build and explain a small music recommender system.
-
-Your goal is to:
-
-- Represent songs and a user "taste profile" as data
-- Design a scoring rule that turns that data into recommendations
-- Evaluate what your system gets right and wrong
-- Reflect on how this mirrors real world AI recommenders
-
-Replace this paragraph with your own summary of what your version does.
-
----
+The Music Recommender project intends to create a system that scores songs
+against a given user profile and recommend songs that matches the user  
+profile via a scoring system of criteria. The recommender gets near exact 
+matches well but falls in accuracy as the songs start to differ from the user 
+profiles. This mirrors real world AI recommenders that are supposedly fine 
+tuned to meet their use case but sometimes theres blind or missing factors
+that could bias the results. 
 
 ## How The System Works
 
@@ -227,28 +222,26 @@ drastic difference. This shows me that genre has an extremely heavy influence on
 
 ## Limitations and Risks
 
-Summarize some limitations of your recommender.
-
-Examples:
-
-- It only works on a tiny catalog
-- It does not understand lyrics or language
-- It might over favor one genre or mood
-
-You will go deeper on this in your model card.
-
----
+Some limitations of the recommender is the implicit blind spot of not being
+able to see relations or the intentions of the songs, rather its very binary
+and objective where things need to match otherwise it considers it not  
+matching at all. It is heavily biased towards exact mood and genre matches  
+which makes the recommendation model extremely shallow when it comes to 
+finding non ideal matches. 
 
 ## Reflection
 
-Read and complete `model_card.md`:
+Recommenders turn data into predictions by ingesting data profiles and running
+comparisons through a statistical scoring system based on a set number of  target criteria and parameters collected from the users and subject data to 
+approximate matches or best fits. Biases and unfairness as discussed in class
+could arise from adhering too closely to the original baseline, which could 
+discount prefectly acceptable results due to a huge bias or weight put towards
+matching other criteria such as gender, gaps. It could even disregard useful 
+data just because it hasn't been considered, such as publications. 
 
-[**Model Card**](model_card.md)
-
-Write 1 to 2 paragraphs here about what you learned:
-
-- about how recommenders turn data into predictions
-- about where bias or unfairness could show up in systems like this
-
-
+In terms of future work, I'll look at diversifying the results to avoid 
+heavily recommending a select few of the artists because their entire song
+list is of said genre, add methods for filtering out disliked categories,
+customization for different search types, and also improve on the user  
+interface by adding a GUI via streamlit and data persistence. 
 
