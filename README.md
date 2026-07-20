@@ -220,13 +220,10 @@ Top recommendations for 'Deep Intense Rock':
 ------------------------------------------------------------
 ## Experiments You Tried
 
-Use this section to document the experiments you ran. For example:
-
-- What happened when you changed the weight on genre from 2.0 to 0.5
-- What happened when you added tempo or valence to the score
-- How did your system behave for different types of users
-
----
+During this project, I ran three different changes: 2 of them being weight changes to genre and mood, and 1 feature removal with the exclusion of genre. The weights were decreased for
+genre and mood since they were the most heavily weighed categories, with the experiments  reducing their values to a quarter of the original. When running the changed individually,  the results shifted drastically with the lowered genre value, whereas the mood reduction  kept mostly the same results with the normal weighing. When excluding the genre, the results
+differed drastically from the original results, with high-energy pop users showing the most
+drastic difference. This shows me that genre has an extremely heavy influence on the system, and in the future there needs to be redundancies to add points for similiar genres.   
 
 ## Limitations and Risks
 
