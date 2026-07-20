@@ -2,9 +2,7 @@
 
 ## 1. Model Name  
 
-Give your model a short, descriptive name.  
-Example: **VibeFinder 1.0**  
-
+**MusicMuse 1.0**
 ---
 
 ## 2. Intended Use  
@@ -61,16 +59,18 @@ Prompts:
 
 ## 6. Limitations and Bias 
 
-Where the system struggles or behaves unfairly. 
-
-Prompts:  
-
-- Features it does not consider  
-- Genres or moods that are underrepresented  
-- Cases where the system overfits to one preference  
-- Ways the scoring might unintentionally favor some users  
-
----
+System currently faces the following biases as follows:
+1. Fixed weighing is heavily biased towards genre and mood accounting
+for two-thirds of the entire scoring system.
+2. Exact match for mood and genre criteria which discounts songs that 
+might be a related genre or similar mood due to lack of relational scoring
+to adjust for non-exact matches.
+3. No current diversity mechanism, which can cause one artists songs to appear
+more frequently.
+4. Gradient scoring mechanisms carry the least amount of weight despite being
+more fair in terms of showing actual relation. 
+5. Valence, danceability, and tempo are parameters that aren't currently used 
+in this iteration despite being present.
 
 ## 7. Evaluation  
 
