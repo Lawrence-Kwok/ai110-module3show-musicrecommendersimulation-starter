@@ -76,21 +76,51 @@ You can add more tests in `tests/test_recommender.py`.
 ---
 
 ## Sample Recommendation Output
-
-Paste a sample of your recommender's output here as a text block so a reader can see what it produces:
-
-```
-# e.g.:
-# User profile: genre=indie, mood=chill, energy=low
-# Recommendations:
-#   1. ...
-#   2. ...
-#   3. ...
-```
-
-**Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
-
----
+============================================================
+1. Sunrise City by Neon Echo
+   Score   : 97.70
+   Genre   : pop
+   Mood    : happy
+   Reasons :
+   - matches your favorite genre
+   - matches your favorite mood
+   - energy is close to your target (+24.5)
+   - acousticness fits your preference (+8.2)
+------------------------------------------------------------
+2. Gym Hero by Max Pulse
+   Score   : 66.25
+   Genre   : pop
+   Mood    : intense
+   Reasons :
+   - matches your favorite genre
+   - energy is close to your target (+21.8)
+   - acousticness fits your preference (+9.5)
+------------------------------------------------------------
+3. Rooftop Lights by Indigo Parade
+   Score   : 60.50
+   Genre   : indie pop
+   Mood    : happy
+   Reasons :
+   - matches your favorite mood
+   - energy is close to your target (+24.0)
+   - acousticness fits your preference (+6.5)
+------------------------------------------------------------
+4. Mirrorball Static by Juniper Glow
+   Score   : 33.35
+   Genre   : funk
+   Mood    : playful
+   Reasons :
+   - energy is close to your target (+24.8)
+   - acousticness fits your preference (+8.6)
+------------------------------------------------------------
+5. Neon District by Kilo Phase
+   Score   : 32.40
+   Genre   : techno
+   Mood    : euphoric
+   Reasons :
+   - energy is close to your target (+23.0)
+   - acousticness fits your preference (+9.4)
+------------------------------------------------------------
 
 ## Experiments You Tried
 
